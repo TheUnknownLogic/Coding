@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Eczar&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        header{
+            background-image: url(head.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 8vh;
+            width: 100vw;
+            
+            /* color: white; */
+        }
+        li{
+            display: inline;
+            color: white;
+            font-family: Bruno Ace SC 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 3vw;
+            padding: 2vw;
+        }
+        footer{
+            background-color: black;
+            height: 10.2vh;
+            width: 100vw;
+            color: white;
+            font-size: 2vw;
+            position: relative;
+            top: 19em;
+            display: flex;
+            justify-content: center;
+            
+
+
+        
+        }
+        .container{
+            height: 91.8vh;
+            width: 100vw;
+            background-image: url(skeleton.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 0;
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            
+        }
+        .left{
+            width: 40vw;
+            height: 91.8vh;
+            background-image: url(khada.jpg);
+            background-repeat: no-repeat;
+            background-size: auto;
+            z-index: 1;
+            display: flex;
+            /* justify-self: left; */
+            position: relative;
+            left: -10vw;
+            
+            
+        }
+        .right{
+            width: 40vw;
+            height: 91.8vh;
+            background-image: url(khada.jpg);
+            background-repeat: no-repeat;
+            background-size: auto;
+            float: right;
+            z-index: 1;
+            display: flex;
+            /* justify-self: right; */
+            position: relative;
+            right: -16vw;
+
+        }
+        .dragon{
+            background-image: url(dragon.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border: 10vw solid yellow;
+            width: 9vw;
+            height: 10vw;
+            display: flex;
+            /* z-index: 10; */
+            position: absolute;
+            left: 30em;
+            animation: spin ease-in-out 23s infinite;
+            /* animation: new ease-in-out 10s infinite; */
+
+
+        }
+        .dragon2{
+            background-image: url(dragon.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+
+            width: 9vw;
+            height: 10vw;
+            display: flex;
+            /* z-index: 10; */
+            position: absolute;
+            right: 30em;
+            animation: spin2 ease-in-out 23s infinite;
+            /* animation: new ease-in-out 10s infinite; */
+
+
+        }
+        @keyframes spin {
+            from{
+                width: 60vw;
+                height: 40vw;
+                border: 20vw dotted yellow;
+            }
+            to{
+                width: 10vw;
+                height: 11vw;
+                transform: rotate(100000deg) ;
+                /* animation: new ease-in-out 10s infinite ; */
+                /* right: 500em; */
+                border: 7vw dotted rgb(246, 0, 0);
+                
+
+
+            }
+            /* to{
+                width: 100vw;
+                height: 90vw;
+                transform: rotate(10000deg) skew(35deg, 35deg);
+            }
+            to{
+                width: 9vw;
+                height: 90vw;
+                transform: rotate(-10000deg) skew(35deg, 35deg);
+            } */
+        
+        }
+        @keyframes spin2 {
+            from{
+                width: 60vw;
+                height: 40vw;
+                border: 20vw dotted yellow;
+            }
+            to{
+                width: 10vw;
+                height: 11vw;
+                transform: rotate(-100000deg) ;
+                /* animation: new ease-in-out 10s infinite ; */
+                /* left: 500em; */
+                border: 7vw dotted rgb(0, 0, 0);
+                
+
+
+            }
+            /* to{
+                width: 100vw;
+                height: 90vw;
+                transform: rotate(10000deg) skew(35deg, 35deg);
+            }
+            to{
+                width: 9vw;
+                height: 90vw;
+                transform: rotate(-10000deg) skew(35deg, 35deg);
+            } */
+        
+        }
+        
+            
+
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Reviews</li>
+                <li>More</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+        
+    </div>
+    
+            
+    <footer>
+        <big> Copyright © 2023 Acme Corporation. All rights reserved.</big>
+    </footer>
+    <div class="dragon"></div>
+    <div class="dragon2"></div>
+</body>
+</html>
